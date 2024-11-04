@@ -42,8 +42,9 @@ export default {
         body3: "14px",
       },
       fontFamily: {
-        poppins: ["Poppins"]
-      }
+        poppins: ["Poppins"],
+        tiny5: ["Tiny5"]
+      },
     },
   },
   plugins: [],
