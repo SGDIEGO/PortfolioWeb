@@ -15,10 +15,10 @@ export default function Work() {
             <p className="">Some of the noteworthy projects I have built:</p>
         </div>
         <div className="grid gap-5">
-            <WorkCard img={projects.halo} title={"Fiskill"} description={"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas nec urna ac tellus volutpat viverra. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae."} tag={["wdw","wdw","wdw","wdw","wdw","wdw","wdw","wdw","wdw","wdw","wdw","wdw","wdw","wdw","wdw","wdw","wdw","wdw","wdw","wdw",]} />
-            <WorkCard img={projects.halo} title={"Fiskill"} description={"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas nec urna ac tellus volutpat viverra. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae."} tag={["wdw"]} />
-            <WorkCard img={projects.halo} title={"Fiskill"} description={"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas nec urna ac tellus volutpat viverra. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae."} tag={["wdw"]} />
-            <WorkCard img={projects.halo} title={"Fiskill"} description={"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas nec urna ac tellus volutpat viverra. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae."} tag={["wdw"]} />
+            <WorkCard img={projects.halo} title={"Fiskill"} description={"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas nec urna ac tellus volutpat viverra. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae."} tag={["wdw", "wdw", "wdw", "wdw", "wdw", "wdw", "wdw", "wdw", "wdw", "wdw", "wdw", "wdw", "wdw", "wdw", "wdw", "wdw", "wdw", "wdw", "wdw", "wdw",]} reverse={false} />
+            <WorkCard img={projects.halo} title={"Fiskill"} description={"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas nec urna ac tellus volutpat viverra. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae."} tag={["wdw"]} reverse={true} />
+            <WorkCard img={projects.halo} title={"Fiskill"} description={"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas nec urna ac tellus volutpat viverra. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae."} tag={["wdw"]} reverse={false} />
+            <WorkCard img={projects.halo} title={"Fiskill"} description={"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas nec urna ac tellus volutpat viverra. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae."} tag={["wdw"]} reverse={true} />
         </div>
     </div>
 }

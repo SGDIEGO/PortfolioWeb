@@ -45,6 +45,10 @@ export default {
         poppins: ["Poppins"],
         tiny5: ["Tiny5"]
       },
+      screens: {
+        tablet: "680px",
+        desktop: "1024px"
+      }
     },
   },
   plugins: [],

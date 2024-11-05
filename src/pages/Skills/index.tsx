@@ -21,7 +21,7 @@ export default function Skills() {
     return <div className="grid gap-3">
         <Title content={"Skills"} />
         <p className="flex justify-center">The skills, tools and technologies I am really good at:</p>
-        <div className="grid grid-cols-3 gap-3">
+        <div className="grid tablet:grid-cols-3 gap-5">
             <Skill img={svg.javascript} title={"Javascript"} />
             <Skill img={svg.react} title={"React"} />
             <Skill img={svg.node} title={"Node"} />

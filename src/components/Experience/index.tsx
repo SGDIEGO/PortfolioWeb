@@ -7,7 +7,7 @@ interface ExperienceProps {
 }
 
 export default function ExperienceCard(props: ExperienceProps) {
-    return <div className="grid gap-3 shadow-lg text-body2">
+    return <div className="grid gap-3 shadow-lg p-5 max-w-[890px] rounded-md text-body2 bg-palette dark:bg-palette_800 tablet:flex tablet:gap-20">
         <div className="text-green-500">
             <span className="font-tiny5 text-subtitle">{props.company}</span>
         </div>
