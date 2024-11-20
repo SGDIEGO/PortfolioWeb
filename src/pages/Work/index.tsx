@@ -2,23 +2,35 @@ import Title from "../../components/Title";
 import WorkCard from "../../components/Work";
 
 const projects = {
-    halo: "https://cdn.prod.website-files.com/63fc977c14aaea404dce4439/66bb755690ccd9ae7788bbdf_662919706c1ecb05a7e9ea06_img1.webp",
-    nettra: "https://cdn.prod.website-files.com/63fc977c14aaea404dce4439/66bb755690ccd9ae7788bbe2_6629199853afcdeb0a505757_img2.webp",
-    heytutor: "https://cdn.prod.website-files.com/63fc977c14aaea404dce4439/66bb755690ccd9ae7788bbb0_662919bb5d7adae8f8ef1ea4_img3.webp",
-    nettra2: "https://cdn.prod.website-files.com/63fc977c14aaea404dce4439/66bb755690ccd9ae7788bc55_662919e628f1a30153305e17_img4.webp"
+    taskManager: {
+        img: "./taskmanager.png",
+        link: "https://github.com/SGDIEGO/Task-Manager-App"
+    },
+    movieUI: {
+        img: "./movieui.png",
+        link: "https://github.com/SGDIEGO/Movie-UI"
+    },
+    flowerShopping: {
+        img: "./floreria.png",
+        link: "https://github.com/SGDIEGO/Floreria"
+    },
+    library: {
+        img: "./library.png",
+        link: "https://github.com/SGDIEGO/ProyectoDesarrolloSoftware"
+    },
 }
 
 export default function Work() {
-    return <div className="grid content-center">
+    return <div className="grid content-center ">
         <div className="grid place-items-center">
-            <Title content={"Works"}/>
+            <Title content={"Works"} />
             <p className="">Some of the noteworthy projects I have built:</p>
         </div>
         <div className="grid gap-5">
-            <WorkCard img={projects.halo} title={"Fiskill"} description={"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas nec urna ac tellus volutpat viverra. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae."} tag={["wdw", "wdw", "wdw", "wdw", "wdw", "wdw", "wdw", "wdw", "wdw", "wdw", "wdw", "wdw", "wdw", "wdw", "wdw", "wdw", "wdw", "wdw", "wdw", "wdw",]} reverse={false} />
-            <WorkCard img={projects.halo} title={"Fiskill"} description={"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas nec urna ac tellus volutpat viverra. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae."} tag={["wdw"]} reverse={true} />
-            <WorkCard img={projects.halo} title={"Fiskill"} description={"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas nec urna ac tellus volutpat viverra. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae."} tag={["wdw"]} reverse={false} />
-            <WorkCard img={projects.halo} title={"Fiskill"} description={"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas nec urna ac tellus volutpat viverra. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae."} tag={["wdw"]} reverse={true} />
+            <WorkCard img={projects.taskManager.img} title={"Task Manager App"} description={"App that allow manage tasks of users. Allow fillters, categories and localstorage data."} tag={["JS", "CSS", "HTML"]} reverse={false} redirect={projects.taskManager.link} />
+            <WorkCard img={projects.movieUI.img} title={"Movie UI App"} description={"App to show movies and series online free (Beta) using themoviedb api."} tag={["TS", "CSS", "HTML", "TAILWIND", "REACT", "REACT-ROUTER", "NODEJS",]} reverse={true} redirect={projects.movieUI.link} />
+            <WorkCard img={projects.flowerShopping.img} title={"Flower shopping"} description={"Flower shopp based roles app, with backend, frontend and database."} tag={["TS", "CSS", "HTML", "REACT", "REACT-ROUTER", "NODEJS", "GOLANG", "POSTGRESQL", "SCRUM"]} reverse={false} redirect={projects.flowerShopping.link} />
+            <WorkCard img={projects.library.img} title={"Library manager"} description={"Library manager with roles access, use backend, frontend and database."} tag={["TS", "CSS", "HTML", "REACT", "REACT-ROUTER", "GOLANG", "POSTGRESQL", "SCRUM", "WAILS"]} reverse={true} redirect={projects.library.link} />
         </div>
     </div>
 }

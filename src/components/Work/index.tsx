@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom"
 import Tag from "../Tag"
 
 interface WorkCardProps {
@@ -5,7 +6,8 @@ interface WorkCardProps {
     description: string
     tag: string[]
     img: string
-    reverse: boolean
+    redirect?: string
+    reverse?: boolean
 }
 
 export default function WorkCard(props: WorkCardProps) {
@@ -13,15 +15,18 @@ export default function WorkCard(props: WorkCardProps) {
         return props.tag.map(tag => <Tag content={tag} />)
     }
 
-    return <div className="dark:bg-palette_800 text-body2 shadow-lg rounded-md">
-        <div className={`grid gap-10 place-items-center tablet:flex tablet:place-items-stretch ${props.reverse ? "tablet:flex-row-reverse":""} tablet:flex-nowrap tablet:items-center tablet:justify-between px-10 py-5`}>
+    return <div className="dark:bg-palette_800 text-body2 shadow-lg rounded-xl">
+        <div className={`grid gap-10 place-items-center tablet:flex tablet:place-items-stretch ${props.reverse ? "tablet:flex-row-reverse" : ""} tablet:flex-nowrap tablet:items-center tablet:justify-between px-10 py-5`}>
             <div className="h-full tablet:w-1/2 dark:bg-palette_600">
                 <img className="w-full h-full object-cover" src={props.img} alt="" />
             </div>
             <div className="tablet:w-1/2">
                 <div className="grid gap-5 text-body2">
                     <div>
-                        <span>{props.title}</span>
+                        <Link className="flex place-items-center gap-3" to={props.redirect || ""}>
+                            <span className="text-subtitle font-semibold">{props.title}</span>
+                            <i className="fa-solid fa-diamond-turn-right"></i>
+                        </Link>
                     </div>
                     <div>
                         <span>{props.description}</span>
